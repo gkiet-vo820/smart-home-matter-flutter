@@ -36,3 +36,22 @@ Phần `MatterManager.kt` đã được tách riêng để sau này tích hợp 
 ```bash
 flutter pub get
 flutter run
+```
+
+## Kiểm tra code
+
+```bash
+flutter analyze
+```
+
+## Build APK debug
+
+```bash
+flutter build apk --debug
+```
+
+File APK sau khi build nằm tại:
+
+```text
+build/app/outputs/flutter-apk/app-debug.apk
+```
