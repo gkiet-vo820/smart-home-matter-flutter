@@ -1,17 +1,38 @@
-# luan_van_tot_nghiep_dh52200960
+# Smart Home Matter Flutter
 
-A new Flutter project.
+Ứng dụng Android điều khiển thiết bị IoT hỗ trợ Matter.
 
-## Getting Started
+## Chức năng chính
 
-This project is a starting point for a Flutter application.
+- Hiển thị danh sách thiết bị theo phòng
+- Thêm thiết bị Matter bằng mã setup
+- Quét QR Matter
+- Bật/tắt thiết bị
+- Xem chi tiết thiết bị
+- Chỉnh sửa tên thiết bị và phòng
+- Thêm phòng mới
+- Xóa thiết bị
+- Lưu lịch sử thao tác
+- Lưu dữ liệu cục bộ bằng SharedPreferences
+- Giao tiếp Flutter với Kotlin qua MethodChannel
+- Mô phỏng Matter Manager để chuẩn bị tích hợp Matter SDK thật
 
-A few resources to get you started if this is your first Flutter project:
+## Công nghệ sử dụng
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- Flutter
+- Dart
+- Kotlin Android
+- MethodChannel
+- SharedPreferences
+- mobile_scanner
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Trạng thái hiện tại
+
+Ứng dụng hiện đang chạy ở chế độ mô phỏng Matter.  
+Phần `MatterManager.kt` đã được tách riêng để sau này tích hợp Google Home Mobile SDK hoặc Matter Android SDK thật.
+
+## Cách chạy project
+
+```bash
+flutter pub get
+flutter run
